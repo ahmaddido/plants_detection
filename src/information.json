@@ -1,0 +1,55 @@
+{
+  "begonia rex": {
+    "scientific_name": "Begonia rex-cultorum",
+    "common_name": "Rex Begonia",
+    "watering": "Keep soil evenly moist; avoid waterlogging.",
+    "light": "Bright, indirect light; avoid direct sun.",
+    "how_to_grow": "Place in indirect light, maintain humidity, water when top soil dries slightly.",
+    "toxicity": "Mildly toxic to pets if eaten."
+  },
+
+  "calathea": {
+    "scientific_name": "Calathea spp.",
+    "common_name": "Prayer Plant",
+    "watering": "Keep soil moist; prefers distilled or filtered water.",
+    "light": "Medium to bright indirect light; avoid strong direct sunlight.",
+    "how_to_grow": "Keep humidity high, water regularly, avoid cold drafts.",
+    "toxicity": "Non-toxic to pets."
+  },
+
+  "chamaedorea elegans": {
+    "scientific_name": "Chamaedorea elegans",
+    "common_name": "Parlor Palm",
+    "watering": "Water when top soil dries; avoid soggy soil.",
+    "light": "Low to medium indirect light.",
+    "how_to_grow": "Place in low or medium light, water moderately, maintain steady humidity.",
+    "toxicity": "Non-toxic to pets."
+  },
+
+  "chlorophytum comosum": {
+    "scientific_name": "Chlorophytum comosum",
+    "common_name": "Spider Plant",
+    "watering": "Water regularly, allow soil to dry slightly between waterings.",
+    "light": "Bright, indirect light but tolerates lower light.",
+    "how_to_grow": "Very easy to grow; thrives with indirect light and occasional watering.",
+    "toxicity": "Non-toxic to pets."
+  },
+
+  "crassula": {
+    "scientific_name": "Crassula ovata",
+    "common_name": "Jade Plant",
+    "watering": "Water deeply but infrequently; let soil dry completely between waterings.",
+    "light": "Bright direct or indirect light.",
+    "how_to_grow": "Provide lots of light, minimal water, and good drainage.",
+    "toxicity": "Toxic to pets if ingested."
+  },
+
+  "mini-monstera": {
+    "scientific_name": "Rhaphidophora tetrasperma",
+    "common_name": "Mini Monstera",
+    "watering": "Water when top 2–3 cm of soil is dry.",
+    "light": "Bright, indirect light.",
+    "how_to_grow": "Provide indirect light, support for climbing, and moderate watering.",
+    "toxicity": "Toxic to pets if ingested."
+  }
+}
