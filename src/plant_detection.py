@@ -3,7 +3,7 @@ import cv2
 
 def main():
 
-    model = YOLO("best.pt")
+    model = YOLO("../data/best.pt")
 
     cap = cv2.VideoCapture(0)
    
@@ -13,7 +13,7 @@ def main():
         results = model.predict(
             source=frame,
             imgsz=640,
-            conf=0.7,
+            conf=0.5,
             verbose=False
         )
 
