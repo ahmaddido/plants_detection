@@ -1,60 +1,46 @@
 from ultralytics import YOLO
 import cv2
-from info import generate_info
-import threading
-import time
-
-
-last_plant_detected = None
-cooldown = 3
-last_time = 0
-
-def llm_part(plant_name):
-    info = generate_info(plant_name)
-    print("\n   {{{PLANT INFO}}}   ")
-    print(f"detected: {plant_name}")
-    print(info)
-    print("-" * 60)
-
-
+from info import plant_q
 
 def main():
 
-    model = YOLO("../data/best.pt")
+    model = YOLO("best.pt")
     cap = cv2.VideoCapture(0)
-   
+
+    #solving the flickering detecion. it triggers onlu when stable
+    last_name = None
+    stable_count = 0
+    triggered = set()
+
     while True:
         ret, frame = cap.read()
-        if not ret:
-            continue
+        
+        #if not ret:
+        #    continue
 
-        results = model.predict(
-            source=frame,
-            imgsz=640,
-            conf=0.5,
-            verbose=False
-        )
+        results = model.predict(source=frame, imgsz=640, conf=0.7, verbose=False)
+        cv2.imshow("plants", results[0].plot())
 
-        # Draw detections
-        box_frame = results[0].plot()
-        cv2.imshow("plants", box_frame)
-
-        # ➤ EXTRACT DETECTED PLANT NAME
         if len(results[0].boxes) > 0:
-            cls = results[0].boxes.cls[0].item()                       # class index
-            plant_name = results[0].names[int(cls)]                    # class label
-            print(f"\nDetected plant: {plant_name}")
+            cls = int(results[0].boxes.cls[0].item())
+            plant_name = results[0].names[cls]
 
-            # ➤ CALL LLM TO GET INFO
-            info = generate_info(plant_name)
-            print("\nPlant information:\n", info)
-            print("-" * 60)
+            #to check if the same plant is across frames
+            if plant_name == last_name:
+                stable_count += 1
+            else:
+                last_name = plant_name
+                stable_count = 1
 
-        # Quit with 'q'
+            if stable_count >= 10 and plant_name not in triggered:
+                triggered.add(plant_name)
+                print(f"Plant detected: {plant_name}")
+                plant_q.put(plant_name)
+
+                
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
-    
-    
+
     cap.release()
     cv2.destroyAllWindows()
 
