@@ -4,7 +4,7 @@ import queue
 import threading
 
 
-with open("information.json", "r") as f:
+with open("../data/information.json", "r") as f:
     homeplants = json.load(f)
 
 plant_q = queue.Queue()

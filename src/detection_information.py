@@ -4,7 +4,7 @@ from info import plant_q
 
 def main():
 
-    model = YOLO("best.pt")
+    model = YOLO("../data/best.pt")
     cap = cv2.VideoCapture(0)
 
     #solving the flickering detecion. it triggers onlu when stable
