@@ -1,7 +1,8 @@
 {
-  "begonia rex": {
+  "begenia rex": {
     "scientific_name": "Begonia rex-cultorum",
     "common_name": "Rex Begonia",
+    "German_name": "Königsbegonie",
     "watering": "Keep soil evenly moist; avoid waterlogging, water about 2-3 times per week.",
     "light": "Bright, indirect light; avoid direct sun.",
     "how_to_grow": "Place in indirect light, maintain humidity, water when top soil dries slightly.",
@@ -11,6 +12,7 @@
   "calathea": {
     "scientific_name": "Calathea spp.",
     "common_name": "Prayer Plant",
+    "German_name": "Korbmarante",
     "watering": "Keep soil moist; prefers distilled or filtered water, water about 2-3 times per week.",
     "light": "Medium to bright indirect light; avoid strong direct sunlight.",
     "how_to_grow": "Keep humidity high, water regularly, avoid cold drafts.",
@@ -20,6 +22,7 @@
   "chamaedorea ele.": {
     "scientific_name": "Chamaedorea elegans",
     "common_name": "Parlor Palm",
+    "German_name": "Mexikanische Bergpalme",
     "watering": "Water when top soil dries; avoid soggy soil, water about 1-2 times per week.",
     "light": "Low to medium indirect light.",
     "how_to_grow": "Place in low or medium light, water moderately, maintain steady humidity.",
@@ -29,6 +32,7 @@
   "chlorophytum comosum": {
     "scientific_name": "Chlorophytum comosum",
     "common_name": "Spider Plant",
+    "German_name": "Grünlilie",
     "watering": "Water regularly, allow soil to dry slightly between waterings, water about 1-2 times per week.",
     "light": "Bright, indirect light but tolerates lower light.",
     "how_to_grow": "Very easy to grow; thrives with indirect light and occasional watering.",
@@ -38,6 +42,7 @@
   "crassula": {
     "scientific_name": "Crassula ovata",
     "common_name": "Jade Plant",
+    "German_name": "Jadepflanze",
     "watering": "Water deeply but infrequently; let soil dry completely between waterings, water about 1-2 times per week.",
     "light": "Bright direct or indirect light.",
     "how_to_grow": "Provide lots of light, minimal water, and good drainage.",
