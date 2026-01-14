@@ -36,6 +36,8 @@ The project has four main layers:
 
 The first step in this project was data preparation. To build a custom plant detector, photos were taken of six different houseplants under various conditions. These images were then uploaded to Roboflow, where the plants were manually labeled. After completing the labeling process, the dataset was used to train a YOLOv11n model. The trained model was tested in real-time to verify its detection accuracy and performance. The implementation for real-time plant detection can be found in the (plant_detection.py) file.
 
+<img width="767" height="453" alt="Image" src="https://github.com/user-attachments/assets/cac91fc7-35b1-47fb-b934-04786fc7030a" />
+
 
 The next step was integrating a LLM into the system. Since the main goal of the project was to run the entire pipeline locally without any internet connection, Ollama was chosen as the LLM runtime environment. Ollama is an open-source tool that simplifies managing and running LLMs on local machines. It can be installed from:
 
